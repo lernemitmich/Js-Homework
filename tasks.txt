@@ -1,0 +1,8 @@
+1. Alert “Hello, World”
+2. Create an input field, get the content of the input field and alert it
+3. Create a paragraph and add some dummy text to it. Then add a button which says
+“Color text green”. If you click on the button the dummy text should turn green.
+4. Create a new paragraph which says “Hi, everyone”. Create a button which just says
+“Change”. If you click on this button the text should change to “Hello, class”
+5. Create a button which says “Open Me”. If you click on the button it should open a
+popup.

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        alert("Hello, World!"); // 1. Alert “Hello, World”
+    </script>
+
+
+<!--2. Create an input field, get the content of the input field and alert it-->
+<input type="text" id="myInput"> <!-- created input field-->
+
+<button onclick="showInput()">Get Input</button> <!-- Getting input-->
+<script>
+    function showInput() {
+      var input = document.getElementById("myInput").value; // retrieve the value of input field with id "myInput"
+      console.log(input); // Display the value in an alert dialog box
+    } 
+    </script>
+    <!--Create a paragraph and add some dummy text to it. Then add a button which says
+    “Color text green”. If you click on the button the dummy text should turn green.--->
+
+<p id="myText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<button onclick="changeTextColor()">Color text green</button>
+
+<script>
+function changeTextColor() {
+  var paragraph = document.getElementById("myText");
+  paragraph.style.color = "green";
+}
+</script>
+
+<!--Create a new paragraph which says “Hi, everyone”. Create a button which just says
+“Change”. If you click on this button the text should change to “Hello, class”-->
+
+<p id="newText">Hi, everyone</p>
+<button onclick="document.getElementById('newText').innerText = 'Hello, class'">Change</button>
+
+<script>
+    function changeText() {
+      var paragraph = document.getElementById("newText");
+      paragraph.innerText = "Hello, class";
+    }
+    </script>
+
+    <!-- Create a button which says “Open Me”. If you click on the button it should open a
+popup.-->
+
+<button onclick="openPopup()">Open Me</button>
+
+<script>
+function openPopup() {
+  window.open('https://www.google.com/', '_blank');
+}
+</script>
+
+</body>
+</html>
